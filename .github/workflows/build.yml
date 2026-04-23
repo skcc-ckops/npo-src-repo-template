@@ -9,6 +9,6 @@ jobs:
   build-and-push:
     uses: skccmygit/npo-platform-ci-templates/.github/workflows/docker-build-push.yml@main
     with:
-      image_name: 'YOUR_APP_NAME' # TODO: (필수) 개발할 애플리케이션의 이름을 작성하세요 (예: my-app-src)
-      harbor_project: 'npo'
-      config_repo: 'skccmygit/YOUR_DEPLOY_REPO_NAME' # TODO: (필수) deploy 레포지토리 주소를 작성하세요 (예: skccmygit/my-app)
+      image_name: 'my-app' # TODO: (필수) 개발할 애플리케이션의 이름을 작성하세요 (예: my-app)
+      harbor_project: 'npo' # TODO: (선택) 환경 이름을 작성하세요 (보통 'npo' 고정)
+      config_repo: 'skccmygit/my-app-deploy' # TODO: (필수) deploy 레포지토리 주소를 작성하세요 (예: skccmygit/my-app-deploy)
