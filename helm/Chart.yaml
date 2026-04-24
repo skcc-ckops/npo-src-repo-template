@@ -1,0 +1,10 @@
+apiVersion: v2
+name: my-app # TODO: (필수) 본인 어플리케이션 이름으로 수정 (예: my-app)
+description: Helm config deployment for my-app # TODO: (필수) 본인 어플리케이션 이름으로 수정 (예: my-app)
+type: application
+version: 0.1.0
+dependencies:
+  # Base Chart: 인프라 공통 설정(ALB, NodeSelector 등)을 이 차트에서 모두 상속받습니다.
+  - name: npo-platform-chart
+    version: 1.0.0
+    repository: https://harbor.biz-think.net/chartrepo/npo
